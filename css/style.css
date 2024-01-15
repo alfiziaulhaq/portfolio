@@ -1062,6 +1062,16 @@ form textarea {
     top: 100%;
   }
 
+  .navlist li ul li {
+    width: 200px;
+    display: list-item;
+    position: relative;
+    border-bottom: 1px solid var(--orange);
+  }
+  .navlist li ul li a {
+    line-height: 15px;
+  }
+  
   .navlist .sub-products {
     top: 160px;
     margin-left: 100px;
