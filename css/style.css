@@ -723,7 +723,9 @@ header.sticky {
 }
 .banner-sustain h1,
 .banner-climate h1,
-.banner-innovation h1 {
+.banner-innovation h1,
+.banner-github h1,
+.banner-story h1 {
   color: var(--yellow);
 }
 
