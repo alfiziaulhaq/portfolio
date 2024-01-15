@@ -746,7 +746,7 @@ header.sticky {
   width: 50%;
   top: 0;
   left: 50%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: none;
   justify-content: center;
@@ -801,7 +801,7 @@ header.sticky {
   width: 50%;
   top: 0;
   left: 50%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: none;
   justify-content: center;
@@ -828,7 +828,7 @@ header.sticky {
   width: 50%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: none;
   justify-content: center;
