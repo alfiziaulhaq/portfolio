@@ -636,6 +636,13 @@ header.sticky {
   border-top: var(--grey) solid 5px;
 }
 
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  align-content: center;
+  border-radius: 10px;
+}
 .about-text h2 {
   font-size: var(--h2-font);
   line-height: 1;
@@ -707,7 +714,7 @@ header.sticky {
   width: 50%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: none;
   justify-content: center;
@@ -721,7 +728,7 @@ header.sticky {
 }
 
 .innovation {
-  background: url(../img/inno5.jpg);
+  background: url(../img/ss_monitoring.jpg);
   position: relative;
   height: 120vh;
   width: 100%;
@@ -748,7 +755,7 @@ header.sticky {
 }
 
 .climate {
-  background: url(../img/compressor2.jpg);
+  background: url(../img/ss_aramcos.jpg);
   position: relative;
   height: 120vh;
   width: 100%;
@@ -766,12 +773,67 @@ header.sticky {
   width: 50%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: none;
   justify-content: center;
   flex-direction: column;
   color: whitesmoke;
+}
+
+
+.story {
+  background: url(../img/portfolio6.jpg);
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-story {
+  padding: 10px 100px 60px 100px;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: none;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.github {
+  background: url(../img/portfolio3.jpg);
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.banner-github {
+  padding: 10px 100px 60px 100px;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: none;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
 }
 
 .products-list {
@@ -883,8 +945,8 @@ header.sticky {
   border-bottom: 1px solid #ff004f;
 }
 .contact-right .list li span {
-  border-bottom: solid 2px red;
-
+  border-bottom: solid 2px orangered;
+  color: green;
   align-items: right;
 }
 .contact-right .list li h5 {
@@ -1017,6 +1079,7 @@ form textarea {
 
 @media (max-width: 920px) {
   .feedback {
+    padding: 90px 2rem 50px 2rem;
     grid-template-columns: 1fr;
   }
   .contact {
@@ -1071,7 +1134,7 @@ form textarea {
   .navlist li ul li a {
     line-height: 15px;
   }
-  
+
   .navlist .sub-products {
     top: 160px;
     margin-left: 100px;
@@ -1111,7 +1174,10 @@ form textarea {
 
   .banner-sustain,
   .banner-innovation,
-  .banner-climate {
+  .banner-climate,
+  .banner-story,
+  .banner-github {
+    padding: 10px 20px 10px 20px;
     height: 60%;
     width: 100%;
     top: 40%;
