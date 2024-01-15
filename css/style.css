@@ -13,7 +13,7 @@
   --black: black;
   --black2: #202020;
   --orange: #ff4d05;
-  --green:#4CBB17;
+  --green: #4cbb17;
   --pink: #ff004f;
   --yellow: rgb(219, 213, 23);
   --big-font: 5rem;
@@ -110,9 +110,7 @@ span {
 .navlist i.rotate{
   transform: translateY(-50%) rotate(-180deg);
 }*/
-.am a {
-  margin-right: 0px;
-}
+
 #menu-icon {
   font-size: 35px;
   color: var(--black);
@@ -121,23 +119,26 @@ span {
   margin-left: 25px;
   display: none;
 }
+section1 {
+  width: 100%;
+}
 
 section {
   padding: 160px 15% 120px;
 }
 /* home slider start */
-.slider{
-	position: relative;
-	width: 100%;
-	background: #2c3e50; /* darckblue */
-}
-.myslide{
-	height: 110vh;
+.slider {
+  position: relative;
   width: 100%;
-	display: none;
-	overflow: hidden;
+  background: #2c3e50; /* darckblue */
 }
-.image1{
+.myslide {
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.image1 {
   background: url(../img/aramco3.jpg);
   position: relative;
   height: 110vh;
@@ -161,7 +162,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.image3{
+.image3 {
   background: url(../img/oil3.jpg);
   position: relative;
   height: 110vh;
@@ -173,7 +174,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.image4{
+.image4 {
   background: url(../img/bg1.jpg);
   position: relative;
   height: 110vh;
@@ -185,44 +186,47 @@ section {
   align-items: center;
   justify-content: center;
 }
-.prev, .next{
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	font-size: 50px;
-	padding: 15px;
-	cursor: pointer;
-	color: #fff;
-	transition: 0.1s;
-	user-select: none;
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.1s;
+  user-select: none;
 }
-.prev:hover, .next:hover{
-	color: #00a7ff; /* blue */
+.prev:hover,
+.next:hover {
+  color: #00a7ff; /* blue */
 }
-.next{
-	right: 0;
+.next {
+  right: 0;
 }
-.dotsbox{
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	bottom: 20px;
-	cursor: pointer;
+.dotsbox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
 }
-.dot{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	border: 3px solid #fff;
-	border-radius: 50%;
-	margin: 0 10px;
-	cursor: pointer;
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
 }
 /* /2 */
 
 /* javascript */
-.active, .dot:hover{
-	border-color: #00a7ff; /* blue */
+.active,
+.dot:hover {
+  border-color: #00a7ff; /* blue */
 }
 /* /javascript */
 
@@ -235,79 +239,105 @@ section {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: 0.8}
-  to {opacity: 1}
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* /muslide add fade */
 
 /* 3 */
-.txt{
-	position: absolute;
-	color: #fff;
-	letter-spacing: 2px;
-	line-height: 35px;
+.txt {
+  position: absolute;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 35px;
   top: 40%;
   right: 20%;
-	left: 15%;
+  left: 15%;
   justify-self: flex-end;
-	-webkit-animation-name: posi;
-  	-webkit-animation-duration: 2s;
-  	animation-name: posi;
-  	animation-duration: 2s;
-	z-index: 1;
+  -webkit-animation-name: posi;
+  -webkit-animation-duration: 2s;
+  animation-name: posi;
+  animation-duration: 2s;
+  z-index: 1;
 }
 
 @-webkit-keyframes posi {
-  from {left: 35%;}
-  from{right: 0%;}
-  to {left: 15%;}
-
+  from {
+    left: 35%;
+  }
+  from {
+    right: 0%;
+  }
+  to {
+    left: 15%;
+  }
 }
-
 
 @keyframes posi {
-  from {left: 35%;}
-  from{right: 0%;}
-  to {left: 15%;}
- 
+  from {
+    left: 35%;
+  }
+  from {
+    right: 0%;
+  }
+  to {
+    left: 15%;
+  }
 }
 
-.txt h1{
-	color: #00a7ff; /* blue */
-	font-size: 50px;
-	margin-bottom: 20px;
+.txt h1 {
+  color: #00a7ff; /* blue */
+  font-size: 50px;
+  margin-bottom: 20px;
 }
-.txt p{
-	font-weight: bold;
-	font-size: 20px;
+.txt p {
+  font-weight: bold;
+  font-size: 20px;
 }
 /* /3 */
 
 /* 4 */
-.image1, .image2,.image3,.image4 {
-	transform: scale(1.5, 1.5);
-	-webkit-animation-name: zoomin;
-  	-webkit-animation-duration: 40s;
-  	animation-name: zoomin;
-  	animation-duration: 40s;
+.image1,
+.image2,
+.image3,
+.image4 {
+  transform: scale(1.5, 1.5);
+  -webkit-animation-name: zoomin;
+  -webkit-animation-duration: 40s;
+  animation-name: zoomin;
+  animation-duration: 40s;
 }
 @-webkit-keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
 }
-
 
 @keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
 }
 /* /4 */
-
 
 .home-contact {
   background: url(../img/contactus.jpg);
@@ -394,7 +424,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.home-gas{
+.home-gas {
   background: url(../img/tank5.webp);
   position: relative;
   height: 100vh;
@@ -466,7 +496,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.home-cookie{
+.home-cookie {
   background: url(../img/portfolio1.jpg);
   position: relative;
   height: 100vh;
@@ -478,7 +508,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.home-terms{
+.home-terms {
   background: url(../img/portfolio2.jpg);
   position: relative;
   height: 100vh;
@@ -490,7 +520,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.home-privacy{
+.home-privacy {
   background: url(../img/portfolio3.jpg);
   position: relative;
   height: 100vh;
@@ -502,7 +532,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.home-sitemap{
+.home-sitemap {
   background: url(../img/portfolio6.jpg);
   position: relative;
   height: 100vh;
@@ -596,11 +626,6 @@ header.sticky {
   padding-left: 20%;
   padding-right: 20%;
 }
-.center-text img {
-  max-width: 100%;
-  height: 100%;
-  width: 100%;
-}
 
 .feedback {
   display: grid;
@@ -610,12 +635,7 @@ header.sticky {
   padding: 90px 5rem 50px 5rem;
   border-top: var(--grey) solid 5px;
 }
-.about-img img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  border-radius: 10px;
-}
+
 .about-text h2 {
   font-size: var(--h2-font);
   line-height: 1;
@@ -668,9 +688,8 @@ header.sticky {
   line-height: 1;
 }
 
-
 .sustain {
-  background: url(../img/natural2.jpg);
+  background: url(../img/ss_nutrizen.png);
   position: relative;
   height: 120vh;
   width: 100%;
@@ -695,9 +714,11 @@ header.sticky {
   flex-direction: column;
   color: white;
 }
-.banner-sustain h1,.banner-climate h1, .banner-innovation h1{
-  color: var(--yellow) ;
-} 
+.banner-sustain h1,
+.banner-climate h1,
+.banner-innovation h1 {
+  color: var(--yellow);
+}
 
 .innovation {
   background: url(../img/inno5.jpg);
@@ -711,7 +732,7 @@ header.sticky {
   align-items: center;
   justify-content: center;
 }
-.banner-innovation{
+.banner-innovation {
   padding: 10px 100px 60px 100px;
   position: absolute;
   height: 100%;
@@ -738,7 +759,7 @@ header.sticky {
   align-items: center;
   justify-content: center;
 }
-.banner-climate{
+.banner-climate {
   padding: 10px 100px 60px 100px;
   position: absolute;
   height: 100%;
@@ -948,7 +969,7 @@ form textarea {
   color: var(--black);
   background: var(--orange);
 }
-.sub span{
+.sub span {
   padding-left: 200px;
 }
 
@@ -1041,15 +1062,6 @@ form textarea {
     top: 100%;
   }
 
-  .navlist li ul li {
-    width: 200px;
-    display: list-item;
-    position: relative;
-    border-bottom: 1px solid var(--orange);
-  }
-  .navlist li ul li a {
-    line-height: 15px;
-  }
   .navlist .sub-products {
     top: 160px;
     margin-left: 100px;
@@ -1086,15 +1098,17 @@ form textarea {
     padding-left: 10%;
     padding-right: 10%;
   }
-  
-  .banner-sustain, .banner-innovation , .banner-climate {
+
+  .banner-sustain,
+  .banner-innovation,
+  .banner-climate {
     height: 60%;
     width: 100%;
     top: 40%;
     left: 0;
     background: rgba(0, 0, 0, 0.7);
   }
-  .txt{
+  .txt {
     top: 20%;
   }
 }
