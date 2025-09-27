@@ -276,7 +276,7 @@ section {
 
 @-webkit-keyframes posi {
   from {
-    left: 35%;
+    left: 30%;
   }
   from {
     right: 0%;
@@ -288,7 +288,7 @@ section {
 
 @keyframes posi {
   from {
-    left: 35%;
+    left: 30%;
   }
   from {
     right: 0%;
@@ -630,18 +630,28 @@ header.sticky {
 .feedback {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: flex-start;
+  align-items: stretch;
   gap: 5rem;
   padding: 90px 5rem 50px 5rem;
   border-top: var(--grey) solid 5px;
 }
 
+.about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame {
+  background: linear-gradient(45deg, rgb(219, 213, 23), #f09433, #e6683c, var(--orange));
+  padding: 10px;
+  width: 70%;
+  border-radius: 25px;
+}
 .about-img img {
-  max-width: 100%;
   height: auto;
   width: 100%;
-  align-content: center;
-  border-radius: 10px;
+  border-radius: 20px;
+  display: block;
 }
 .about-text h2 {
   font-size: var(--h2-font);
@@ -683,20 +693,21 @@ header.sticky {
 }
 .presense-title {
   position: relative;
-  height: 15vh;
-  background-color: rgb(219, 213, 23);
+  background: linear-gradient(45deg, rgb(219, 213, 23), #f09433, #e6683c, var(--orange));
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  font-size: larger;
-  color: var(--orange);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  color: var(--white);
   font-size: 3rem;
   font-weight: 500;
   line-height: 1;
+  padding: 50px;
 }
 
 .sustain {
-  background: url(../img/ss_nutrizen.png);
+  background: url(../img/aws.jpg);
   position: relative;
   height: 120vh;
   width: 100%;
@@ -713,13 +724,14 @@ header.sticky {
   height: 100%;
   width: 50%;
   top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  left: 50%;
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   align-items: none;
   justify-content: center;
   flex-direction: column;
   color: white;
+  border-radius: 30px 0 0 30px;
 }
 .banner-sustain h1,
 .banner-climate h1,
@@ -729,8 +741,16 @@ header.sticky {
   color: var(--yellow);
 }
 
+.banner-sustain h2,
+.banner-climate h2,
+.banner-innovation h2,
+.banner-github h2,
+.banner-story h2 {
+  color: var(--orange);
+}
+
 .innovation {
-  background: url(../img/ss_monitoring.jpg);
+  background: url(../img/peruri.jpg);
   position: relative;
   height: 120vh;
   width: 100%;
@@ -747,17 +767,18 @@ header.sticky {
   height: 100%;
   width: 50%;
   top: 0;
-  left: 50%;
-  background: rgba(0, 0, 0, 0.8);
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: none;
   justify-content: center;
   flex-direction: column;
   color: white;
+  border-radius: 0 30px 30px 0;
 }
 
 .climate {
-  background: url(../img/ss_aramcos.jpg);
+  background: url(../img/hsi1.png);
   position: relative;
   height: 120vh;
   width: 100%;
@@ -774,18 +795,18 @@ header.sticky {
   height: 100%;
   width: 50%;
   top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  left: 50%;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: none;
   justify-content: center;
   flex-direction: column;
   color: whitesmoke;
+  border-radius: 30px 0 0 30px;
 }
 
-
 .story {
-  background: url(../img/portfolio6.jpg);
+  background: url(../img/bangkit.jpg);
   position: relative;
   height: 120vh;
   width: 100%;
@@ -802,40 +823,14 @@ header.sticky {
   height: 100%;
   width: 50%;
   top: 0;
-  left: 50%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: none;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-}
-
-.github {
-  background: url(../img/portfolio3.jpg);
-  position: relative;
-  height: 120vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-.banner-github {
-  padding: 10px 100px 60px 100px;
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.91);
   display: flex;
   align-items: none;
   justify-content: center;
   flex-direction: column;
   color: white;
+  border-radius: 0 30px 30px 0;
 }
 
 .products-list {
@@ -860,7 +855,7 @@ header.sticky {
 }
 .layer {
   width: 100%;
-  height: 85px;
+  height: 72px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), var(--orange));
   position: absolute;
   border-radius: 8px;
@@ -872,21 +867,21 @@ header.sticky {
   align-items: center;
   text-align: center;
   justify-content: first baseline;
-  padding: 0 40px;
+  padding: 0 30px;
   transition: height 0.5s;
 }
 .layer h5 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
-  border-bottom: 3px solid whitesmoke;
   color: #fff;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .layer p {
   color: white;
-  font-size: 1rem;
+  font-size: small;
   line-height: 1.8;
+  text-align: left;
 }
 .layer i {
   color: var(--orange);
@@ -1013,6 +1008,18 @@ form textarea {
   cursor: pointer;
 }
 
+.world {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /
+}
+.world img {
+  width: 90%;
+  height: auto;
+  display: block;
+}
+
 .end {
   padding: 20px 15%;
   display: flex;
@@ -1060,7 +1067,7 @@ form textarea {
     transition: 0.1s;
   }
   section {
-    padding: 110px 3% 60px;
+    padding: 70px 3% 60px;
   }
   .end {
     padding: 15px 3%;
@@ -1099,7 +1106,6 @@ form textarea {
   .home-text {
     padding-right: 10px;
   }
-
   .navlist {
     position: absolute;
     top: -1000px;
@@ -1174,19 +1180,53 @@ form textarea {
     padding-right: 10%;
   }
 
+  .txt {
+    padding-left: 10px;
+  }
+  .about-text h4 {
+    font-size: large;
+    font-weight: 600;
+    color: var(--black);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+  }
   .banner-sustain,
   .banner-innovation,
   .banner-climate,
   .banner-story,
   .banner-github {
     padding: 10px 20px 10px 20px;
-    height: 60%;
+    height: 75%;
     width: 100%;
-    top: 40%;
+    top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    bottom: 25%;
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 0 0 25px 25px;
   }
   .txt {
     top: 20%;
+  }
+
+  .banner-sustain h1,
+  .banner-climate h1,
+  .banner-innovation h1,
+  .banner-github h1,
+  .banner-story h1 {
+    font-size: medium;
+  }
+  .banner-sustain h2,
+  .banner-climate h2,
+  .banner-innovation h2,
+  .banner-github h2,
+  .banner-story h2 {
+    font-size: medium;
+  }
+  .banner-sustain h3,
+  .banner-climate h3,
+  .banner-innovation h3,
+  .banner-github h3,
+  .banner-story h3 {
+    font-size: small;
   }
 }
